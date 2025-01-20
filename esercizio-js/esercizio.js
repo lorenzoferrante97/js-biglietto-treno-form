@@ -37,10 +37,13 @@ let offer = "Biglietto Standard";
 
 // containers per output html
 let ticketNameContainer = document.getElementById("ticketName");
+let ticketOfferContainer = document.getElementById("ticketType");
+let ticketPriceContainer = document.getElementById("ticketPrice");
 
 // output per html
 let nameSurnameOutput = document.createElement("p");
-let offerOutput = document.createElement("p");
+let ticketOfferOutput = document.createElement("p");
+let ticketPriceOutput = document.createElement("p");
 
 const prezzoPerKm = 0.21;
 let costoBiglietto = 0;
@@ -70,9 +73,15 @@ button.addEventListener("click", () => {
     }
 
     // js to html
-    
+
     // name & surname
     nameSurnameOutput.append(nameSurname);
     ticketNameContainer.appendChild(nameSurnameOutput);
+    // offer
+    ticketOfferOutput.append(offer);
+    ticketOfferContainer.appendChild(ticketOfferOutput);
+    // price
+    ticketPriceOutput.append(`${costoBiglietto.toFixed(2)} Euro`);
+    ticketPriceContainer.appendChild(ticketPriceOutput);
 
 })
