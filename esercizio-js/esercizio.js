@@ -33,6 +33,14 @@ let nameSurname = "";
 let km = 0;
 let age = "";
 let button = document.getElementById("btnTicket");
+let offer = "Biglietto Standard";
+
+// containers per output html
+let ticketNameContainer = document.getElementById("ticketName");
+
+// output per html
+let nameSurnameOutput = document.createElement("p");
+let offerOutput = document.createElement("p");
 
 const prezzoPerKm = 0.21;
 let costoBiglietto = 0;
@@ -50,16 +58,21 @@ button.addEventListener("click", () => {
 
     if (age == "ageMinor18") {
         costoBiglietto *= 0.80;
-        
-        
+        offer = "Biglietto Bonus -18";
 
     } else if (age == "agePlus65") {
         costoBiglietto *= 0.60;
-        
+        offer = "Biglietto Bonus +65";
         
     } else {
         
         
     }
+
+    // js to html
+    
+    // name & surname
+    nameSurnameOutput.append(nameSurname);
+    ticketNameContainer.appendChild(nameSurnameOutput);
 
 })
