@@ -35,6 +35,9 @@ let age = "";
 let button = document.getElementById("btnTicket");
 let offer = "Biglietto Standard";
 
+// recupero classi lista passeggeri
+let passeggeriList = document.getElementById("passeggeriList").classList;
+
 // containers per output html
 let ticketNameContainer = document.getElementById("ticketName");
 let ticketOfferContainer = document.getElementById("ticketType");
@@ -84,4 +87,10 @@ button.addEventListener("click", () => {
     ticketPriceOutput.append(`${costoBiglietto.toFixed(2)} Euro`);
     ticketPriceContainer.appendChild(ticketPriceOutput);
 
+    // mostra dati passeggeri
+    passeggeriList.remove("hidden");
+    passeggeriList.add("grid");
+
 })
+
+// end code
