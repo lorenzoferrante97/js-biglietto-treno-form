@@ -16,9 +16,11 @@
 
 <body class="font-custom bg-smoke-50">
 
-    <main class="flex flex-col items-center container-fluid mt-12u">
+    <main class="flex flex-col items-center container-fluid mt-12u gap-10u">
+        <!-- calcolo del biglietto -->
         <section id="bigliettoCreator" class="flex flex-col items-center w-full">
             <h1 class="h1">Calcola il prezzo del tuo biglietto</h1>
+            <!-- form -->
             <form class="grid w-full grid-cols-1 rounded-md bg-smoke-200 sm:grid-cols-4 p-3u md:p-5u gap-5u">
                 <!-- name & surname -->
                 <div class="flex flex-col gap-3u col-span-full lg:col-span-2">
@@ -39,13 +41,21 @@
                         <option value="agePlus65">65+</option>
                     </select>
                 </div>
+                <!-- button -->
                 <div class="col-span-full mt-5u">
                     <button type="submit" class="text-white bg-black rounded btn hover:px-14u">Calcola il costo</button>
                 </div>
             </form>
         </section>
+        <!-- dati finali biglietto -->
         <section id="bigliettoShowcase" class="flex flex-col items-center w-full">
-
+            <h2 class="h2">Il tuo biglietto</h1>
+                <div class="flex flex-col w-full rounded-md bg-smoke-200 p-3u md:p-5u gap-5u">
+                    <h3 class="h3">Dettaglio Passeggeri</h3>
+                    <table>
+                        
+                    </table>
+                </div>
         </section>
 
     </main>
