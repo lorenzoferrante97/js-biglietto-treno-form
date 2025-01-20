@@ -33,6 +33,7 @@ let nameSurname = "";
 let km = 0;
 let age = "";
 let button = document.getElementById("btnTicket");
+let reset = document.getElementById("btnReset");
 let offer = "Biglietto Standard";
 
 // recupero classi lista passeggeri
@@ -70,9 +71,6 @@ button.addEventListener("click", () => {
         costoBiglietto *= 0.60;
         offer = "Biglietto Bonus +65";
         
-    } else {
-        
-        
     }
 
     // js to html
@@ -93,4 +91,7 @@ button.addEventListener("click", () => {
 
 })
 
+reset.addEventListener("click", () => {
+    location.reload();
+})
 // end code
