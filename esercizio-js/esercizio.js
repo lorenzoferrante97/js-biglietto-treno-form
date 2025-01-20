@@ -34,11 +34,32 @@ let km = 0;
 let age = "";
 let button = document.getElementById("btnTicket");
 
+const prezzoPerKm = 0.21;
+let costoBiglietto = 0;
+
 button.addEventListener("click", () => {
     event.preventDefault();
 
+    // recupero values da form
     nameSurname = document.getElementById("nameSurname").value;
     km = document.getElementById("km").value;
     age = document.getElementById("ages").value;
-    
+
+    // calcolo costo iniziale biglietto
+    costoBiglietto = km * 0.21;
+
+    if (age == "ageMinor18") {
+        costoBiglietto *= 0.80;
+        
+        
+
+    } else if (age == "agePlus65") {
+        costoBiglietto *= 0.60;
+        
+        
+    } else {
+        
+        
+    }
+
 })
