@@ -2313,6 +2313,21 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.bg-yellow-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 98 7 / var(--tw-bg-opacity, 1));
+}
+
+.bg-smoke-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(182 179 193 / var(--tw-bg-opacity, 1));
+}
+
+.bg-smoke-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(131 129 152 / var(--tw-bg-opacity, 1));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
