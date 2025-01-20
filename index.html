@@ -19,16 +19,25 @@
     <main class="flex flex-col items-center container-fluid">
         <section id="bigliettoCreator" class="flex flex-col items-center w-full">
             <h1 class="h1">Calcola il prezzo del tuo biglietto</h1>
-            <form class="grid w-full grid-cols-1 rounded-md md:rounded-lg bg-smoke-200 lg:grid-cols-3 p-3u md:p-5u">
+            <form class="grid w-full grid-cols-1 rounded-md bg-smoke-200 lg:grid-cols-3 p-3u md:p-5u gap-5u">
+                <!-- name & surname -->
                 <div class="flex flex-col gap-3u">
-                    <label for="" class="font-medium">Nome e Cognome</label>
-                    <input type="text" placeholder="Mario Rossi" class="rounded-sm px-4u min-h-[48px]">
+                    <label for="nameSurname" class="font-medium">Nome e Cognome</label>
+                    <input id="nameSurname" type="text" placeholder="Mario Rossi" class="rounded-sm px-4u min-h-[48px]">
                 </div>
-                <div>
-
+                <!-- km -->
+                <div class="flex flex-col gap-3u">
+                    <label for="km" class="font-medium">KM da percorrere</label>
+                    <input id="km" type="number" placeholder="20" class="rounded-sm px-4u min-h-[48px]">
                 </div>
-                <div>
-
+                <!-- age -->
+                <div class="flex flex-col gap-3u">
+                    <label for="ages" class="font-medium">La tua età</label>
+                    <select name="ages" id="ages" class="rounded-sm px-4u min-h-[48px]">
+                        <option value="ageMinor18">0-17</option>
+                        <option value="agePlus18">18-64</option>
+                        <option value="agePlus65">65+</option>
+                    </select>
                 </div>
                 <div class="col-span-full">
 

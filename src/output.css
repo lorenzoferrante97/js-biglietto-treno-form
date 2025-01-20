@@ -1837,6 +1837,14 @@ video {
   gap: 12px;
 }
 
+.gap-7u {
+  gap: 28px;
+}
+
+.gap-5u {
+  gap: 20px;
+}
+
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 1;
 }
