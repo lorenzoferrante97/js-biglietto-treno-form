@@ -16,12 +16,13 @@
 
 <body class="font-custom bg-smoke-50">
 
-    <main class="flex flex-col container-fluid">
-        <section id="bigliettoCreator" class="row-centered">
-            <h1 class="text-center h1">Calcola il prezzo del tuo biglietto</h1>
-            <form class="grid grid-cols-3">
-                <div>
-
+    <main class="flex flex-col items-center container-fluid">
+        <section id="bigliettoCreator" class="flex flex-col items-center w-full">
+            <h1 class="h1">Calcola il prezzo del tuo biglietto</h1>
+            <form class="grid w-full grid-cols-1 rounded-md md:rounded-lg bg-smoke-200 lg:grid-cols-3 p-3u md:p-5u">
+                <div class="flex flex-col gap-3u">
+                    <label for="" class="font-medium">Nome e Cognome</label>
+                    <input type="text" placeholder="Mario Rossi" class="rounded-sm px-4u min-h-[48px]">
                 </div>
                 <div>
 
@@ -34,7 +35,7 @@
                 </div>
             </div>
         </section>
-        <section id="bigliettoShowcase" class="row-centered">
+        <section id="bigliettoShowcase" class="flex flex-col items-center w-full">
 
         </section>
 
