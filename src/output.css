@@ -1011,6 +1011,23 @@ video {
 
 /* flex row centered content */
 
+.row-centered {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .row-centered {
+    flex-direction: row;
+  }
+}
+
+.row-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ANCHOR CARDS */
 
 .card {
@@ -1108,6 +1125,10 @@ video {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
 }
 
 .float-start {
@@ -1601,6 +1622,10 @@ video {
 
 .grid-flow-col-dense {
   grid-auto-flow: column dense;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
